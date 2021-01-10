@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+</head>
+<body>
+    <div class="t1"></div>
+</body>
+<style>
+    .t1{
+        position:absolute;
+        left:0;
+        width:50px;
+        height:50px;
+        border-radius: 100%;
+        background-color: #0081a7;
+        animation-name: first;
+        animation-duration: 2s;
+        animation-timing-function: steps(10,start);
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
+    }
+    @keyframes first{
+      0%{
+          left:0;
+          background:#0081a7;
+      }
+      25%{
+          left:100px;
+          background:#00afb9;
+      }
+      50%{
+          left:200px;
+          background:#faf7ca;
+      }
+      75%{
+          left:300px;
+          background:#fed9b7;
+      }
+      100%{
+          left:400px;
+          background:#f07167;
+      }
+  }
+</style>
+</html>

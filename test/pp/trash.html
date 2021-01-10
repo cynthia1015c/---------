@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash</title>
+</head>
+<body>
+    
+    <div class="ho">
+        <div class="wp"><img class="qq" src="./pic/工具.png"></div>
+        <div class="ww"><p class="w">Work</p></div>
+    </div>
+    
+    <div class="an"><img src="./pic/酒瓶.png"></div>
+</body>
+<style>
+    body{
+        background-color: black;
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .wp{
+        padding-top: 200px;
+        display:  flex;
+        align-items: center;
+        justify-content:  center;
+        margin: 0px;
+    }
+    .ww{
+        color: #AAA9A9;
+        font-size: 40px;
+        font-family: monospace;
+        display: flex; 
+        align-items: center;
+        justify-content:  center;
+        height: 43px;
+        /* display: block;
+        float: left;
+        text-align:center; */
+    }
+    
+    .an{
+        position:absolute;
+        top: -10px;
+        left: 20px;
+        animation-name: first;
+        animation-duration: 2s;
+        opacity:0;
+        animation-play-state:paused;
+        animation-fill-mode:forwards;
+    }
+    
+    @keyframes first{
+        0%{
+            top: 0;
+            opacity:0;
+        }
+        100%{
+            top: 570px;
+            opacity:1;
+        }
+    }
+
+    .ho:hover ~ .an{
+        animation-play-state:running;
+    }
+</style>
+</html>

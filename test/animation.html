@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<body>
+    <div class="tt"></div>
+    <div class="tt2"></div>
+</body>
+<style>
+    .tt{
+        position:absolute;
+        left:0;
+        width:50px;
+        height:50px;
+        background-color: crimson;
+        animation-name: first;
+        animation-duration: 2s;
+    }
+    @keyframes first{
+        from{
+            left: 0;
+        }
+        to{
+            left: 200px;
+        }
+        
+    }
+    *{
+        margin: 0px;
+    }
+    .tt2{
+        position:absolute;
+        left:70px;
+        width:50px;
+        height:50px;
+        background-color: rgb(54, 42, 165);
+        animation-name: second;
+        animation-duration: 2s;
+    }
+    @keyframes second{
+        from{
+            top: 0;
+        }
+        to{
+            top: 200px;
+        }
+    }
+</style>
+</html>
